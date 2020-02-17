@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/api_login/" method="post">
+        {% csrf_token %}
+        <input type="text" name="username"><br>
+        <input type="text" name="email"><br>
+        <input type="text" name="password"><br>
+        <input type="submit" value="Send it now">
+    </form>
+</body>
+</html>
