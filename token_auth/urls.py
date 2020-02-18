@@ -6,6 +6,7 @@ from rest_framework import routers, serializers, viewsets
 from rest_framework.authtoken.views import obtain_auth_token
 from token_app.views import api_login
 from token_app.views import login
+from token_app.views import rest_model_json
 
 
 #another 
@@ -23,5 +24,6 @@ urlpatterns = [
     path('api_login/', api_login),
     path('hello/', appviews.TestHelloView.as_view()),
     path('hello2/', appviews.TestHelloView2.as_view()),
+    path('rest_model_json/',rest_model_json),
 
 ]
